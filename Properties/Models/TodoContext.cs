@@ -1,11 +1,14 @@
 using Microsoft.EntityFrameworkCore;
 
-// inherit dbcontext
-public class TodoContext : DbContext
+namespace TodoApi.Models
 {
-    public TodoContext(DbContextOptions<TodoContext> options)
-    : base(options)
+    // inherit dbcontext
+    public class TodoContext : DbContext
     {
+        public TodoContext(DbContextOptions<TodoContext> options)
+        : base(options)
+        {
+        }
+        public DbSet<TodoItem> TodoItems { get; set; }
     }
-    public DbSet<TodoItem> TodoItems { get; set; }
 }

@@ -1,4 +1,6 @@
 
+namespace TodoApi.Models
+{
     // create a class for todo 
     public class TodoItem
     {
@@ -7,3 +9,4 @@
         public bool IsComplete {get; set;}
         
     }
+}
