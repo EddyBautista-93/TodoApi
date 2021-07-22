@@ -1,5 +1,4 @@
-namespace TodoAPI.Models
-{
+
     // create a class for todo 
     public class TodoItem
     {
@@ -8,4 +7,3 @@ namespace TodoAPI.Models
         public bool IsComplete {get; set;}
         
     }
-}
